@@ -1,67 +1,82 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Laravel Travel Agency – Tour & Package Booking System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+✈️ **Modern Travel Agency Web Application** built with **Laravel** — helping users discover destinations, explore tour packages, book trips, and manage bookings seamlessly. Admins handle packages, destinations, inquiries, and more.
 
-## About Laravel
+Powered by **Laravel** (with Eloquent ORM), **MySQL** database (full schema in `travelagency.sql`), **Tailwind CSS** + **Vite** for responsive frontend, and Blade templating.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Ideal for learning Laravel in real-world travel projects, portfolio showcase, or starting your own agency site.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+![Banner](https://placehold.co/1200x400/0ea5e9/ffffff/png?text=Laravel+Travel+Agency+Booking&font=roboto)  
+<!-- Reliable placeholder (sky blue travel theme) – replace with real screenshot: upload to repo (e.g. /public/assets/banner.png) and update to ![Banner](/assets/banner.png) -->
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ✨ Key Features (Typical & Planned)
+Based on standard Laravel travel booking systems:
 
-## Learning Laravel
+- **Frontend / User Side**:
+  - Homepage with featured tours, popular destinations, sliders & search bar
+  - Browse tour packages by category (adventure, family, luxury, international/domestic)
+  - Package details: itinerary, inclusions, pricing, images, availability
+  - Search & filter tours (destination, dates, price range, duration)
+  - Book package: select dates, travelers, submit inquiry/booking
+  - User registration/login, profile, booking history
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Admin / Backend Side**:
+  - Dashboard: overview of bookings, inquiries, revenue stats
+  - CRUD for Tour Packages, Destinations, Categories
+  - Manage bookings: view, approve/reject, update status (pending → confirmed → completed)
+  - Handle user inquiries/contact forms
+  - Upload images for packages/destinations
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- **System-Wide**:
+  - Secure authentication & role-based access (user/admin)
+  - Responsive design with Tailwind CSS
+  - Form validation, error handling, success messages
+  - MySQL database with migrations or direct SQL import (`travelagency.sql`)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🛠️ Tech Stack
+| Technology              | Purpose                              | Official Link |
+|-------------------------|--------------------------------------|---------------|
+| Laravel                 | Backend framework & routing          | [laravel.com/docs](https://laravel.com/docs/11.x) |
+| PHP                     | Server-side logic                    | 8.1+          |
+| MySQL                   | Database (schema in travelagency.sql)| [mysql.com](https://www.mysql.com) |
+| Eloquent ORM            | Models & database queries            | [laravel.com/docs/eloquent](https://laravel.com/docs/11.x/eloquent) |
+| Blade + Tailwind CSS    | Views & modern styling               | [tailwindcss.com/docs](https://tailwindcss.com/docs) |
+| Vite                    | Asset bundling & hot reload          | [laravel.com/docs/vite](https://laravel.com/docs/11.x/vite) |
+| Composer                | PHP dependencies                     | [getcomposer.org](https://getcomposer.org) |
 
-## Laravel Sponsors
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🚀 Quick Start – Run Locally
 
-### Premium Partners
+### Prerequisites
+- PHP 8.1+  
+- Composer  
+- Node.js + npm (for Vite/Tailwind)  
+- MySQL server  
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### Steps
+1. Clone the repository
+   ```bash
+   git clone https://github.com/hanzla8/TravelAgency.git
+cd TravelAgency
 
-## Contributing
+composer install
+npm install
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+npm run dev    # Watch mode during development
+# OR npm run build for production
 
-## Code of Conduct
+cp .env.example .env
+php artisan key:generate
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+### Quick Next Steps After Committing
+- Add repo **description**: "Laravel Travel Agency Booking System – Tour packages, destinations, bookings with MySQL"
+- Add topics: `laravel`, `php`, `travel-agency`, `tour-booking`, `booking-system`, `tailwindcss`, `mysql`, `web-app`
+- Upload screenshots (homepage, package view, booking form, admin) → edit paths
+- Banner: Sky blue placeholder works; customize with travel-themed image later
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# TravelAgency
+Direct copy-paste ready — detailed, link-rich where useful, and professional. If you share more specifics (e.g., exact models like Tour/Package/Booking, or added features), I can refine it! 🚀
